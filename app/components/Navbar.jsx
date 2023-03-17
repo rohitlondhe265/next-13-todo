@@ -15,6 +15,9 @@ const Navbar = () => {
                         </Link>
                     </div>
                 </div>
+                <Link className="text-sky-600 hover:text-sky-700" href={"/todos"}>
+                    My Todos
+                </Link>
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
