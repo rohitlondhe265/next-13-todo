@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
+    "@vercel/examples-ui": "^1.0.5",
     "daisyui": "^2.51.4",
+    "jose": "^4.13.1",
+    "nanoid": "^4.0.1",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swr": "^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

@@ -4,16 +4,18 @@ import { redirect } from "next/navigation";
 
 export async function GET(request) {
 
-  const cookiesStore = cookies();
-  const token = cookiesStore.get("token");
+  // const cookiesStore = cookies();
+  // const token = cookiesStore.get("token");
 
-  const headersList = headers();
-  const host = headersList.get("host");
+  // const headersList = headers();
+  // const host = headersList.get("host");
 
-  return NextResponse.json({ msg: "ok", token: token.value, host: host }, {
-    status: 201,
-    headers: { "Set-Cookie": `token=token-1234` }, // set new response cookies
-  })
+  // return NextResponse.json({ msg: "ok", token: token.value, host: host }, {
+  //   status: 201,
+  //   headers: { "Set-Cookie": `token=token-1234` }, // set new response cookies
+  // });
+
+  return NextResponse.json("hii");
 }
 
 export async function POST(request) {

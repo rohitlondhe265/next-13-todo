@@ -18,13 +18,15 @@ const Navbar = () => {
                 <Link className="text-sky-600 hover:text-sky-700" href={"/todos"}>
                     My Todos
                 </Link>
-                <div className="dropdown dropdown-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" />
-                        </div>
-                    </label>
-                    {/* <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                <Link className="text-sky-600 hover:text-sky-700" href={"/admin"}>
+                    Admin Panel
+                </Link>
+                <label className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
+                        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" />
+                    </div>
+                </label>
+                {/* <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         <li>
                             <Link className="text-sky-600 hover:text-sky-700" href={"/admin/panel"}>
                                 Admin Panel
@@ -34,7 +36,6 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul> */}
-                </div>
             </div>
         </header>
     )
