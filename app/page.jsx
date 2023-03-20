@@ -34,13 +34,18 @@ export default function Index() {
         authenticate and be able to see the page:
       </Text>
       <div className="space-x-4 mt-2 mb-4">
-        <Button
+
+        <Button className='bg-blue-300'
           onClick={() => {
             fetch('/api/jwt/auth', { method: 'POST' })
-          }}
-        >
-          Set the {USER_TOKEN} cookie
-        </Button>
+          }} > Set the {USER_TOKEN} cookie </Button>
+
+        <Button className='bg-red-300'
+          onClick={() => {
+            fetch('/api/jwt/expire', { method: 'POST' })
+          }} > Delete the {USER_TOKEN} cookie </Button>
+
+
       </div>
       <Text className="mb-4">
         API routes are also behind authentication, if the token is missing the

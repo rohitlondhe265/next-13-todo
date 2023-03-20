@@ -1,10 +1,11 @@
-import { expireUserCookie } from '@lib/auth'
-import { NextResponse } from 'next/server'
+import { expireUserCookie } from '@/lib/auth';
+import { jsonResponse } from '@/lib/utils';
+import { NextResponse } from 'next/server';
 
 export const config = {
     runtime: 'edge',
 }
 
-export default async function POST(req) {
-    return expireUserCookie(NextResponse.json({ success: true }, { status: 200 }))
+export async function POST(req) {
+    return expireUserCookie(jsonResponse(200, { success: true }));
 }
